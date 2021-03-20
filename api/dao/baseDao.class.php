@@ -29,6 +29,7 @@ try {
       $stmt->execute($params);
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    
     public function queryUnique($query,$params){
 
       $results =$this->query($query,$params);

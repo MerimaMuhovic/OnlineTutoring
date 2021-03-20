@@ -8,11 +8,13 @@ $userDao= new UserDao();
 //$userDao->getUserByEmail("merima.muhovic@hotmail.com");
 
 $user=[
-"name"=>"Alma",
-"surname"=>"Spahic",
-"email"=>"alma@hotmail.com",
-"password"=>"0000",
-"account_id"=> 3
+
+"name" => "Alma",
+"surname" => "Spahic",
+"email" => "alma@hotmail.com",
+"password" => "0000",
+"account_id" => 3
+
 ];
 $userDao->addUser($user);
 
