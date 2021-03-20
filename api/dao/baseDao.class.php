@@ -1,23 +1,27 @@
 <?php
-class baseDao{
+
+class BaseDao{
+
     public function __construct(){
-
-
-    }
-    public function insert(){
-
         
+    }
+
+    public function insert() {
+
     }
     public function update(){
         
     }
-
     public function query(){
 
     }
+    public function queryUnique(){
 
-   public function query_unique{
+    }
 
-   }
+
+
+
 }
+
 ?>
