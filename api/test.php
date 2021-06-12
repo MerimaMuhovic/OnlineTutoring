@@ -1,5 +1,5 @@
 <?php 
-require_once dirname(__FILE__)."/dao/UserDao.class.php";
+/*require_once dirname(__FILE__)."/dao/UserDao.class.php";
 
 $userDao= new UserDao();
 
@@ -20,5 +20,5 @@ $userDao->addUser($user);
 
 print_r($user);
 
-
+*/
 ?>

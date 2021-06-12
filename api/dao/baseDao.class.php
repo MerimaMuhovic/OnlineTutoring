@@ -3,7 +3,7 @@ require_once dirname(__FILE__)."/../config.php";
 
 class BaseDao{
   
-  protected $connection;
+  private $connection;
   
     public function __construct(){
 
@@ -24,17 +24,17 @@ try {
     public function update(){
         
     }
-    public function query($query, $params){
-      $stmt= $this->connection->prepare($query);
+    /*public function query($query, $params){
+      /*$stmt= $this->connection->prepare($query);
       $stmt->execute($params);
       return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     
     public function queryUnique($query,$params){
 
-      $results =$this->query($query,$params);
+     $results =$this->query($query,$params);
       return reset($results);
-    }
+    }*/
 
 
 
