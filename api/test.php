@@ -1,24 +1,16 @@
 <?php 
-/*require_once dirname(__FILE__)."/dao/UserDao.class.php";
 
-$userDao= new UserDao();
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-//$user= $userDao->getUserByID(1);
+require_once dirname(__FILE__)."/dao/UserDao.class.php";
 
-//$userDao->getUserByEmail("merima.muhovic@hotmail.com");
+$user_dao= new UserDao();
 
-$user=[
+//$user=$user_dao->getUserByEmail("merima.muhovic@hotmail.com");
+$user=$user_dao->getUser_by_id(1);
 
-"name" => "Alma",
-"surname" => "Spahic",
-"email" => "alma@hotmail.com",
-"password" => "1234",
-"account_id" => 5
+print_r($user)
 
-];
-$userDao->addUser($user);
-
-print_r($user);
-
-*/
 ?>
