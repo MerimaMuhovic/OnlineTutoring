@@ -15,17 +15,20 @@ class UserDao extends BaseDao{
         return $this->query_unique("SELECT * FROM users WHERE id= :id",["id"=>$id]);
 
     }
-/*
+
     public function addUser($user){
 
-        $sql = "INSERT INTO users (name, surname, email, password, account_id) VALUES (:name, :surname, :email, :password, :account_id)";
+        $sql = "INSERT INTO users (name, surname, email,active, password) VALUES (:name, :surname, :email,:active, :password)";
         $stmt= $this->connection->prepare($sql);
         $stmt->execute($user);
+        $user['id'] = $this->connection->lastInsertId();
+        return $user;
+
 
     }
     public function updateUser($id, $user){
 
-    }*/
+    }
 
 }
 
